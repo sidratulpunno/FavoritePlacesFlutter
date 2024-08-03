@@ -47,7 +47,6 @@ class _LocationInputState extends State<LocationInput> {
     });
     print(locationData.latitude);
     print(locationData.longitude);
-    print('hi');
   }
 
   @override
@@ -62,7 +61,7 @@ class _LocationInputState extends State<LocationInput> {
     );
 
     if (_isGettingLocation) {
-      previewContent = CircularProgressIndicator();
+      previewContent = const CircularProgressIndicator();
     }
 
     return Column(
